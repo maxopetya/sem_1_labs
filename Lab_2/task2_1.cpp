@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello world" << std::endl;
     using byte = unsigned char;
     std::pair<byte, byte> positionA;
     std::cin >> positionA.first >> positionA.second;
@@ -42,19 +41,19 @@ int main() {
 
     // условие 5 (пешка)
     // 5.1 (обычный ход на 1 клетку)
-    if (abs(positionA.first - positionB.first) == 1 and (positionB.second - positionA.second) == 2) {
-        std::cout << "Pawn can threaten by moving once" << std::endl;
+    if (positionA.first - positionB.first == 0 and (positionB.second - positionA.second) == 1) {
+        std::cout << "Pawn can get there by moving once" << std::endl;
     }
 
     // 5.2 (обычный ход на 2 клетки)
-    else if (abs(positionA.first - positionB.first) == 1 and positionA.second == '2' and positionB.second == '5') {
-        std::cout << "Pawn can threaten by moving twice" << std::endl;
+    else if (positionA.first - positionB.first == 0 and positionA.second == '2' and positionB.second == '4') {
+        std::cout << "Pawn can get there by moving twice" << std::endl;
     }
 
     // 5.3 (пешка бьет другую фигуру или пешку)
-    else if (abs(positionA.first - positionB.first) == 2 and abs(positionA.second - positionB.second) == 2) {
-        std::cout << "Pawn can threaten by capturing" << std::endl;
+    else if (abs(positionA.first - positionB.first) == 1 and positionB.second - positionA.second == 1) {
+        std::cout << "Pawn can get there by capturing" << std::endl;
     }
-    else {std::cout << "Pawn cant threaten" << std::endl;}
+    else {std::cout << "Pawn cant get there" << std::endl;}
     return 0;
 }
