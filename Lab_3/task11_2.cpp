@@ -4,9 +4,9 @@
 int main() {
     std::string s = "Can you can a can as a canner can can a can?";
     std::string bylo = "can";
-    std::string stalo = "new_word";
+    std::string stalo = " new_word ";
     size_t pos = 0;
-    while ((pos = s.find("can", pos)) != std::string::npos) {
+    while ((pos = s.find(" can ", pos)) != std::string::npos) {
         s.replace(pos, 3, stalo);
         pos += 8;
     }
