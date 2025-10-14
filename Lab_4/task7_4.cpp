@@ -48,4 +48,5 @@ int main() {
     std::string s = "Can you can a can as a canner can can a can?";
     char sep = ' ';
     split(s, sep);
+    //мяу
 }
