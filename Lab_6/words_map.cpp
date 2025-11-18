@@ -25,3 +25,4 @@ std::map<std::string, int> wordsMapCounter(const std::string& str)
 
     return result;
 }
+

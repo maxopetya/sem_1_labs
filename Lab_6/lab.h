@@ -31,3 +31,4 @@ void plusesDeleter(std::vector<int>& v);
 
 // 9. Sort
 void Sort(std::list<int>& nums);
+

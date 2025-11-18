@@ -26,3 +26,4 @@ int diffWordsCounter(const std::string& str)
 
     return uniq.size();
 }
+

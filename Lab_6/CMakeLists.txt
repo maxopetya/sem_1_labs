@@ -17,3 +17,4 @@ add_executable(Lab_6
         sort_list.cpp
 )
 
+

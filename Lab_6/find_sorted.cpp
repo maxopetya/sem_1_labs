@@ -18,3 +18,4 @@ std::vector<int>::iterator findInSorted(std::vector<int>::iterator first,
     }
     return last;
 }
+

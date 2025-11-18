@@ -8,3 +8,4 @@ std::vector<int>::iterator Find(std::vector<int>::iterator first,
             return it;
     return last;
 }
+

@@ -22,3 +22,4 @@ int wordsCounter(const std::string& str)
     }
     return count;
 }
+

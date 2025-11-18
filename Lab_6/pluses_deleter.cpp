@@ -7,3 +7,4 @@ void plusesDeleter(std::vector<int>& v)
                            [](int x){ return x > 0; }),
             v.end());
 }
+
