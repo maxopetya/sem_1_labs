@@ -1,5 +1,5 @@
-#include "lab.h"
 #include <set>
+#include <iostream>
 
 int diffWordsCounter(const std::string& str)
 {
@@ -27,3 +27,7 @@ int diffWordsCounter(const std::string& str)
     return uniq.size();
 }
 
+int main() {
+    std::cout << "Different words: "
+              << diffWordsCounter("can you can a can as a canner can can a can") << std::endl;
+}

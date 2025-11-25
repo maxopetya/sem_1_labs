@@ -1,4 +1,5 @@
-#include "lab.h"
+#include <list>
+#include <iostream>
 
 void reverseNum(std::list<int>& nums)
 {
@@ -8,4 +9,10 @@ void reverseNum(std::list<int>& nums)
         ++it;
     }
 }
-
+int main() {
+    std::list<int> list1 = {1,5,4,-3};
+    reverseNum(list1);
+    std::cout << "Reverse numbers: ";
+    for (int x : list1) std::cout << x << " ";
+    std::cout << std::endl;
+}

@@ -1,4 +1,4 @@
-#include "lab.h"
+#include <iostream>
 
 int wordsCounter(const std::string& str)
 {
@@ -23,3 +23,6 @@ int wordsCounter(const std::string& str)
     return count;
 }
 
+int main() {
+    std::cout << "wordsCounter: " << wordsCounter("can you can f can") << std::endl;
+}

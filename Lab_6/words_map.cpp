@@ -1,4 +1,6 @@
-#include "lab.h"
+#include <iostream>
+#include <map>
+
 
 std::map<std::string, int> wordsMapCounter(const std::string& str)
 {
@@ -26,3 +28,7 @@ std::map<std::string, int> wordsMapCounter(const std::string& str)
     return result;
 }
 
+int main() {
+    auto m = wordsMapCounter("can you can can");
+    std::cout << "wordsMapCounter: can=" << m["can"] << ", you=" << m["you"] << std::endl;
+}
